@@ -1,4 +1,4 @@
-# Distributed-System
+# Analyzing Relationships among Social Vulnerability Index factors, Crime Cases and Covid Cases
 
 Sources for datasets
 SVI datasets: https://urban-sustain.org/services/dataDownload.php
