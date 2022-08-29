@@ -16,18 +16,18 @@ We have used spark framework for our application part which does the data analys
 /data_processor
 For processing each dataset and merging all the three datasets, we have used python or notebook script which are under ‘data_processor’ directory.
 ## Notebook_data_processing.ipynb
-  - normalize data,
-  - numerical value conversion,
+  - normalize data
+  - numerical value conversion
   - rearrange columns
   - and save to csv
 ## parseSVI.py
   – reads the json file for svi datasets and converts to csv
 ## parseCovid.py
-  - reads the json file for covid datasets and sends it to parse together
+    - reads the json file for covid datasets and sends it to parse together
 ## Parsetogether.py
-  – converts the parseCovid into csv
+    – converts the parseCovid into csv
 ## mergeAll.ipynb
-  – inner join all the three csvs and make a merged csv
+    – inner join all the three csvs and make a merged csv
   
   
   
@@ -35,15 +35,24 @@ For processing each dataset and merging all the three datasets, we have used pyt
 
 
 Spark-defaults.conf
+
 spark.master spark://madison:41278
+
 spark.eventLog.enabled true
+
 spark.eventLog.dir hdfs://madison:41251/spark_log
+
 spark.serializer org.apache.spark.serializer.KryoSerializer
+
 spark.driver.memory 2g
+
 spark.executor.extraJavaOptions -XX:+PrintGCDetails -Dkey=value -Dnumbers="one two
 three"
+
 spark.kryoserializer.buffer.max 128m
+
 spark-env.sh
+
 export SPARK_MASTER_IP=madison
 
 export SPARK_MASTER_PORT=41278
@@ -58,6 +67,7 @@ export SPARK_WORKER_INSTANCES=4
 
 
 slaves
+
 montpelier
 nashville
 santa-fe
