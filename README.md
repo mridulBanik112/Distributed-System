@@ -45,11 +45,18 @@ three"
 spark.kryoserializer.buffer.max 128m
 spark-env.sh
 export SPARK_MASTER_IP=madison
+
 export SPARK_MASTER_PORT=41278
+
 export SPARK_MASTER_WEBUI_PORT=41277
+
 export SPARK_WORKER_CORES=3
+
 export SPARK_WORKER_MEMORY=1g
+
 export SPARK_WORKER_INSTANCES=4
+
+
 slaves
 montpelier
 nashville
