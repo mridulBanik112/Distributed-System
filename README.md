@@ -21,13 +21,13 @@ For processing each dataset and merging all the three datasets, we have used pyt
   - rearrange columns
   - and save to csv
 ## parseSVI.py
-  – reads the json file for svi datasets and converts to csv
+  - reads the json file for svi datasets and converts to csv
 ## parseCovid.py
-    - reads the json file for covid datasets and sends it to parse together
+   - reads the json file for covid datasets and sends it to parse together
 ## Parsetogether.py
-    – converts the parseCovid into csv
+   – converts the parseCovid into csv
 ## mergeAll.ipynb
-    – inner join all the three csvs and make a merged csv
+   – inner join all the three csvs and make a merged csv
   
   
   
@@ -81,7 +81,12 @@ charleston
 columbia
 boise
 indianaolis
-Command for job submission
-$SPARK_HOME/bin/spark-submit <JAR Path> --master <spark://MASTERNODE:PORT> --class <class-name> <input-file-path> <output-directory-name-by-state> <input-file-path>
-Example:
-$SPARK_HOME/bin/spark-submit target/scala-2.12/cs455_term_project_2.12-1.0.jar --master spark://madison:41278 --class Q1 /test_spark/co_combined_norm.csv CO
+
+
+## Command for job submission
+
+    $SPARK_HOME/bin/spark-submit <JAR Path> --master <spark://MASTERNODE:PORT> --class <class-name> <input-file-path> <output-directory-name-by-state> <input-file-path>
+    
+## Example:
+
+    $SPARK_HOME/bin/spark-submit target/scala-2.12/cs455_term_project_2.12-1.0.jar --master spark://madison:41278 --class Q1 /test_spark/co_combined_norm.csv CO
